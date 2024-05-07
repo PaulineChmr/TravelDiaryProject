@@ -14,8 +14,8 @@ struct AddDayView: View{
     @State var id: UUID?
     @State private var descr: String = ""
     @State var date: Date
-    @State private var image: String? = ""
-    @State private var selectedImage: UIImage?
+    @State private var image: [String] = []
+    @State private var selectedImages: [UIImage] = []
     @State var trip: CDTrip?
     @State private var showImagePicker: Bool = false
     @State private var errorMessage: String = "Please fill completely the form"
@@ -30,20 +30,22 @@ struct AddDayView: View{
                 }
                 
                 Section(header: Text("Picture")) {
-                    Button(action: {
-                        showImagePicker = true
-                    }) {
-                        if let selectedImage = selectedImage {
-                            Image(uiImage: selectedImage)
+                    if !selectedImages.isEmpty {
+                        ForEach(selectedImages.indices, id: \.self){ index in
+                            Image(uiImage: selectedImages[index])
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(height: 150)
-                        } else {
-                            Text("Ajouter une Photo")
                         }
                     }
+                    Button(action: {
+                        showImagePicker = true
+                    }) {
+                        
+                        Text("Add a picture")
+                    }
                     .sheet(isPresented: $showImagePicker) {
-                        ImagePicker(selectedImage: $selectedImage, imagePath: $image)
+                        ImagePicker(selectedImage: $selectedImages, imagePath: $image)
                     }
                 }
                 
@@ -58,7 +60,7 @@ struct AddDayView: View{
             }
             .navigationTitle("New Trip")
             .sheet(isPresented: $showImagePicker) {
-                ImagePicker(selectedImage: $selectedImage, imagePath: $image)
+                ImagePicker(selectedImage: $selectedImages, imagePath: $image)
             }
         }.navigationDestination(isPresented: $shouldNavigate) {
             TripDetailView(trip: trip!)
@@ -66,7 +68,7 @@ struct AddDayView: View{
     }
     
     private func saveDay() {
-        guard selectedImage != nil else {
+        guard selectedImages != [] else {
             showAlert = true
             return
         }
@@ -74,7 +76,7 @@ struct AddDayView: View{
         newDay.id = self.id
         newDay.descr = self.descr
         newDay.date = self.date
-        newDay.image = self.image
+        newDay.images = createImagesDay()
         newDay.trip = self.trip
         newDay.edited = true
         shouldNavigate = true
@@ -86,5 +88,19 @@ struct AddDayView: View{
             let nsError = error as NSError
             fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
         }
+    }
+    
+    private func createImagesDay() -> NSSet{
+        var imagesArray: [CDImage] = []
+        var index: Int = 0
+        for image in self.image{
+            let imageToSave = CDImage(context: viewContext)
+            imageToSave.imageid = UUID()
+            imageToSave.imagePath = image
+            imageToSave.position = Int16(index)
+            index += 1
+            imagesArray.append(imageToSave)
+        }
+        return Set(imagesArray) as NSSet
     }
 }

@@ -1,32 +1,32 @@
 //
-//  ImagePicker.swift
+//  MonoImagePicker.swift
 //  TravelDiaryProject
 //
-//  Created by Pauline Chaumeron on 4/5/2024.
+//  Created by Pauline Chaumeron on 7/5/2024.
 //
 
 import Foundation
 import SwiftUI
 import UIKit
 
-struct ImagePicker: UIViewControllerRepresentable {
-    @Binding var selectedImage: [UIImage]
-    @Binding var imagePath: [String]
+struct MonoImagePicker: UIViewControllerRepresentable {
+    @Binding var selectedImage: UIImage?
+    @Binding var imagePath: String?
     @Environment(\.presentationMode) private var presentationMode
     
     class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-        let parent: ImagePicker
+        let parent: MonoImagePicker
         
-        init(parent: ImagePicker) {
+        init(parent: MonoImagePicker) {
             self.parent = parent
         }
         
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             if let uiImage = info[.originalImage] as? UIImage {
-                parent.selectedImage.append(uiImage)
+                parent.selectedImage = uiImage
                 
                 if let assetURL = info[.imageURL] as? URL{
-                    parent.imagePath.append(assetURL.path)
+                    parent.imagePath = assetURL.path
                 }
             }
             parent.presentationMode.wrappedValue.dismiss()

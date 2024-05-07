@@ -45,7 +45,7 @@ struct AddTripView: View {
                         }
                     }
                     .sheet(isPresented: $showImagePicker) {
-                        ImagePicker(selectedImage: $selectedImage, imagePath: $imagePath)
+                        MonoImagePicker(selectedImage: $selectedImage, imagePath: $imagePath)
                     }
                 }
                 
@@ -58,7 +58,7 @@ struct AddTripView: View {
             }
             .navigationTitle("New Trip")
             .sheet(isPresented: $showImagePicker) {
-                ImagePicker(selectedImage: $selectedImage, imagePath: $imagePath)
+                MonoImagePicker(selectedImage: $selectedImage, imagePath: $imagePath)
             }
         }.navigationDestination(isPresented: $shouldNavigate) {
             HomeView()
@@ -96,7 +96,7 @@ struct AddTripView: View {
             day.descr = ""
             day.date = currentDate
             day.edited = false
-            day.image = ""
+            day.images = []
             guard let nextDate = Calendar.current.date(byAdding: .day, value: 1, to: currentDate) else{
                 break
             }
