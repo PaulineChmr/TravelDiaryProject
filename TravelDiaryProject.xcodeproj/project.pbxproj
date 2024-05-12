@@ -8,19 +8,49 @@
 
 /* Begin PBXBuildFile section */
 		17079AA72BE0E90A001B5EE0 /* TravelDiaryProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17079AA62BE0E90A001B5EE0 /* TravelDiaryProjectApp.swift */; };
-		17079AA92BE0E90A001B5EE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17079AA82BE0E90A001B5EE0 /* ContentView.swift */; };
-		17079AAB2BE0E90A001B5EE0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17079AAA2BE0E90A001B5EE0 /* Item.swift */; };
 		17079AAD2BE0E90C001B5EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17079AAC2BE0E90C001B5EE0 /* Assets.xcassets */; };
 		17079AB02BE0E90C001B5EE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17079AAF2BE0E90C001B5EE0 /* Preview Assets.xcassets */; };
+		4C64DCDA2BE24C240060AA81 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C64DCD92BE24C240060AA81 /* Day2.swift */; };
+		4C6527EA2BE250FE00958CAD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6527E92BE250FE00958CAD /* HomeView.swift */; };
+		4C6527EC2BE251C800958CAD /* TripDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6527EB2BE251C800958CAD /* TripDetailView.swift */; };
+		4CA334D92BE5C8410036B4DF /* AddTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA334D82BE5C8410036B4DF /* AddTripView.swift */; };
+		4CA334DB2BE5CA1A0036B4DF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA334DA2BE5CA1A0036B4DF /* ImagePicker.swift */; };
+		4CA334DE2BE5D0720036B4DF /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CA334DC2BE5D0720036B4DF /* DataModel.xcdatamodeld */; };
+		4CA334FF2BE5F4170036B4DF /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA334FE2BE5F4170036B4DF /* DataController.swift */; };
+		4CA335112BE5FF6B0036B4DF /* imagenotfound.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4CA335102BE5FF6B0036B4DF /* imagenotfound.jpeg */; };
+		4CA335132BE600FD0036B4DF /* DayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA335122BE600FD0036B4DF /* DayDetailView.swift */; };
+		4CA335152BE6012C0036B4DF /* AddDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA335142BE6012C0036B4DF /* AddDayView.swift */; };
+		4CA335202BE613DB0036B4DF /* CDDay+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3351E2BE613DB0036B4DF /* CDDay+CoreDataClass.swift */; };
+		4CA335212BE613DB0036B4DF /* CDDay+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3351F2BE613DB0036B4DF /* CDDay+CoreDataProperties.swift */; };
+		4CA335242BE613E60036B4DF /* CDTrip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA335222BE613E60036B4DF /* CDTrip+CoreDataClass.swift */; };
+		4CA335252BE613E60036B4DF /* CDTrip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA335232BE613E60036B4DF /* CDTrip+CoreDataProperties.swift */; };
+		4CBB29712BEA41BB002BBF4C /* MonoImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBB29702BEA41BB002BBF4C /* MonoImagePicker.swift */; };
+		4CBB29742BEA464D002BBF4C /* CDImage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBB29722BEA464D002BBF4C /* CDImage+CoreDataClass.swift */; };
+		4CBB29752BEA464D002BBF4C /* CDImage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBB29732BEA464D002BBF4C /* CDImage+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17079AA32BE0E90A001B5EE0 /* TravelDiaryProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelDiaryProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17079AA62BE0E90A001B5EE0 /* TravelDiaryProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDiaryProjectApp.swift; sourceTree = "<group>"; };
-		17079AA82BE0E90A001B5EE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		17079AAA2BE0E90A001B5EE0 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		17079AAC2BE0E90C001B5EE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17079AAF2BE0E90C001B5EE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4C64DCD92BE24C240060AA81 /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
+		4C6527E92BE250FE00958CAD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4C6527EB2BE251C800958CAD /* TripDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailView.swift; sourceTree = "<group>"; };
+		4CA334D82BE5C8410036B4DF /* AddTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripView.swift; sourceTree = "<group>"; };
+		4CA334DA2BE5CA1A0036B4DF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		4CA334DD2BE5D0720036B4DF /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		4CA334FE2BE5F4170036B4DF /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		4CA335102BE5FF6B0036B4DF /* imagenotfound.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imagenotfound.jpeg; sourceTree = "<group>"; };
+		4CA335122BE600FD0036B4DF /* DayDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailView.swift; sourceTree = "<group>"; };
+		4CA335142BE6012C0036B4DF /* AddDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDayView.swift; sourceTree = "<group>"; };
+		4CA3351E2BE613DB0036B4DF /* CDDay+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDDay+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4CA3351F2BE613DB0036B4DF /* CDDay+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDDay+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4CA335222BE613E60036B4DF /* CDTrip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDTrip+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4CA335232BE613E60036B4DF /* CDTrip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDTrip+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4CBB29702BEA41BB002BBF4C /* MonoImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonoImagePicker.swift; sourceTree = "<group>"; };
+		4CBB29722BEA464D002BBF4C /* CDImage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDImage+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4CBB29732BEA464D002BBF4C /* CDImage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDImage+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +67,13 @@
 		17079A9A2BE0E90A001B5EE0 = {
 			isa = PBXGroup;
 			children = (
+				4CBB29722BEA464D002BBF4C /* CDImage+CoreDataClass.swift */,
+				4CBB29732BEA464D002BBF4C /* CDImage+CoreDataProperties.swift */,
+				4CA335222BE613E60036B4DF /* CDTrip+CoreDataClass.swift */,
+				4CA335232BE613E60036B4DF /* CDTrip+CoreDataProperties.swift */,
+				4CA3351E2BE613DB0036B4DF /* CDDay+CoreDataClass.swift */,
+				4CA3351F2BE613DB0036B4DF /* CDDay+CoreDataProperties.swift */,
+				4CA335102BE5FF6B0036B4DF /* imagenotfound.jpeg */,
 				17079AA52BE0E90A001B5EE0 /* TravelDiaryProject */,
 				17079AA42BE0E90A001B5EE0 /* Products */,
 			);
@@ -53,11 +90,12 @@
 		17079AA52BE0E90A001B5EE0 /* TravelDiaryProject */ = {
 			isa = PBXGroup;
 			children = (
+				4C6527E82BE250AF00958CAD /* View */,
+				4C64DCD42BE24B8E0060AA81 /* Model */,
 				17079AA62BE0E90A001B5EE0 /* TravelDiaryProjectApp.swift */,
-				17079AA82BE0E90A001B5EE0 /* ContentView.swift */,
-				17079AAA2BE0E90A001B5EE0 /* Item.swift */,
 				17079AAC2BE0E90C001B5EE0 /* Assets.xcassets */,
 				17079AAE2BE0E90C001B5EE0 /* Preview Content */,
+				4CA334DC2BE5D0720036B4DF /* DataModel.xcdatamodeld */,
 			);
 			path = TravelDiaryProject;
 			sourceTree = "<group>";
@@ -68,6 +106,29 @@
 				17079AAF2BE0E90C001B5EE0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4C64DCD42BE24B8E0060AA81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C64DCD92BE24C240060AA81 /* Day2.swift */,
+				4CA334FE2BE5F4170036B4DF /* DataController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C6527E82BE250AF00958CAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C6527E92BE250FE00958CAD /* HomeView.swift */,
+				4C6527EB2BE251C800958CAD /* TripDetailView.swift */,
+				4CA334D82BE5C8410036B4DF /* AddTripView.swift */,
+				4CA334DA2BE5CA1A0036B4DF /* ImagePicker.swift */,
+				4CA335122BE600FD0036B4DF /* DayDetailView.swift */,
+				4CA335142BE6012C0036B4DF /* AddDayView.swift */,
+				4CBB29702BEA41BB002BBF4C /* MonoImagePicker.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA335112BE5FF6B0036B4DF /* imagenotfound.jpeg in Resources */,
 				17079AB02BE0E90C001B5EE0 /* Preview Assets.xcassets in Resources */,
 				17079AAD2BE0E90C001B5EE0 /* Assets.xcassets in Resources */,
 			);
@@ -140,9 +202,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17079AA92BE0E90A001B5EE0 /* ContentView.swift in Sources */,
-				17079AAB2BE0E90A001B5EE0 /* Item.swift in Sources */,
+				4CA335202BE613DB0036B4DF /* CDDay+CoreDataClass.swift in Sources */,
+				4CA335212BE613DB0036B4DF /* CDDay+CoreDataProperties.swift in Sources */,
+				4C6527EC2BE251C800958CAD /* TripDetailView.swift in Sources */,
+				4CA335132BE600FD0036B4DF /* DayDetailView.swift in Sources */,
+				4CBB29742BEA464D002BBF4C /* CDImage+CoreDataClass.swift in Sources */,
+				4CBB29752BEA464D002BBF4C /* CDImage+CoreDataProperties.swift in Sources */,
+				4CA334DE2BE5D0720036B4DF /* DataModel.xcdatamodeld in Sources */,
+				4CA335242BE613E60036B4DF /* CDTrip+CoreDataClass.swift in Sources */,
+				4CBB29712BEA41BB002BBF4C /* MonoImagePicker.swift in Sources */,
+				4CA335252BE613E60036B4DF /* CDTrip+CoreDataProperties.swift in Sources */,
+				4CA334DB2BE5CA1A0036B4DF /* ImagePicker.swift in Sources */,
+				4C64DCDA2BE24C240060AA81 /* Day2.swift in Sources */,
+				4CA334FF2BE5F4170036B4DF /* DataController.swift in Sources */,
+				4C6527EA2BE250FE00958CAD /* HomeView.swift in Sources */,
 				17079AA72BE0E90A001B5EE0 /* TravelDiaryProjectApp.swift in Sources */,
+				4CA335152BE6012C0036B4DF /* AddDayView.swift in Sources */,
+				4CA334D92BE5C8410036B4DF /* AddTripView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +352,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TravelDiaryProject/Preview Content\"";
-				DEVELOPMENT_TEAM = 695GE67M4V;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -305,7 +381,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TravelDiaryProject/Preview Content\"";
-				DEVELOPMENT_TEAM = 695GE67M4V;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -348,6 +424,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4CA334DC2BE5D0720036B4DF /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4CA334DD2BE5D0720036B4DF /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 4CA334DD2BE5D0720036B4DF /* DataModel.xcdatamodel */;
+			name = DataModel.xcdatamodeld;
+			path = /Users/24855999/Downloads/TravelDiaryProject/TravelDiaryProject/DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 17079A9B2BE0E90A001B5EE0 /* Project object */;
 }
