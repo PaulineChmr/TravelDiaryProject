@@ -56,7 +56,17 @@ struct AddTripView: View {
                     Text(errorMessage).foregroundStyle(.red)
                 }
             }
-            .navigationTitle("New Trip")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    VStack{
+                        Spacer()
+                            .frame(height:60)
+                        Text("New Trip")
+                            .font(.custom("Roboto-Black", size: 43)) // Customize your font here
+                            .foregroundColor(.tdRedorange)
+                    }
+                }
+            }
             .sheet(isPresented: $showImagePicker) {
                 MonoImagePicker(selectedImage: $selectedImage, imagePath: $imagePath)
             }

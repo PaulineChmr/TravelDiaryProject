@@ -17,9 +17,6 @@ struct HomeView: View{
         NavigationStack{
             // Before Application launches, showing a main image of application for 3 seconds.
             if isAppActive {
-                Rectangle()
-                    .fill(.tdBeige)
-                    .ignoresSafeArea()
                 List(trips){ trip in
                     NavigationLink{
                         TripDetailView(trip: trip)
@@ -40,13 +37,31 @@ struct HomeView: View{
                             Text(trip.title ?? "")
                         }
                     }
+                    .listRowBackground(Color.clear)
+                    .listRowSeparator(.hidden)
                     Button(action: {
                         deleteTrip(trip: trip)
                     }, label: {
                         Label("", systemImage: "xmark.circle").foregroundColor(.red)
                     })
                 }
-                .navigationTitle("My trips")
+                
+                .listRowBackground(Color.clear)
+                .background(Color.tdBeige)
+                .listStyle(PlainListStyle())
+                
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        VStack{
+                            Spacer()
+                                .frame(height:60)
+                            Text("My Trips")
+                                .font(.custom("Roboto-Black", size: 43)) // Customize your font here
+                                .foregroundColor(.tdRedorange)
+                        }
+                    }
+                }
+                .navigationBarTitleDisplayMode(.inline)
                 .navigationBarItems(trailing: addButton)
             } else {
                 // Display a main image before launches the application.
@@ -79,7 +94,9 @@ struct HomeView: View{
         NavigationLink{
             AddTripView()
         } label: {
-            Label("", systemImage: "plus.app.fill")
+                Label("", systemImage: "plus.app.fill")
+                    .foregroundColor(.tdRedorange)
+                    .font(.system(size: 24))
         }
     }
 }
