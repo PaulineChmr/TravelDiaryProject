@@ -19,6 +19,11 @@ struct TripDetailView: View{
                 Label("Back", systemImage: "arrow.left.circle")
             }
             Spacer()
+            NavigationLink{
+                EditTripView(trip: trip)
+            } label: {
+                Label("Edit", systemImage: "pencil")
+            }
         }
         ScrollView{
             NavigationStack{
