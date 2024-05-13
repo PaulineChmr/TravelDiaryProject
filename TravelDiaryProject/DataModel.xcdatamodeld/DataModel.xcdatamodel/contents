@@ -6,7 +6,14 @@
         <attribute name="edited" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="image" optional="YES" attributeType="String"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDImage" inverseName="day" inverseEntity="CDImage"/>
         <relationship name="trip" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDTrip" inverseName="days" inverseEntity="CDTrip"/>
+    </entity>
+    <entity name="CDImage" representedClassName="CDImage" syncable="YES">
+        <attribute name="imageid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="imagePath" optional="YES" attributeType="String"/>
+        <attribute name="position" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="day" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDDay" inverseName="images" inverseEntity="CDDay"/>
     </entity>
     <entity name="CDTrip" representedClassName="CDTrip" syncable="YES">
         <attribute name="descr" optional="YES" attributeType="String"/>
