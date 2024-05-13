@@ -2,7 +2,7 @@
 //  CDImage+CoreDataProperties.swift
 //  TravelDiaryProject
 //
-//  Created by Pauline Chaumeron on 7/5/2024.
+//  Created by Pauline Chaumeron on 13/5/2024.
 //
 //
 
@@ -20,5 +20,9 @@ extension CDImage {
     @NSManaged public var imageid: UUID?
     @NSManaged public var position: Int16
     @NSManaged public var day: CDDay?
+
+}
+
+extension CDImage : Identifiable {
 
 }

@@ -12,22 +12,31 @@ struct DayDetailView: View{
     @State var day: CDDay
     @State var images: [UIImage] = []
     var body: some View {
+        HStack{
+            NavigationLink{
+                TripDetailView(trip: day.trip!)
+            } label: {
+                Label("Back", systemImage: "arrow.left.circle")
+            }
+            Spacer()
+        }
         ScrollView{
             NavigationStack{
-                VStack(alignment: .leading, spacing: 20) {
+                TabView{
                     ForEach(images.indices, id: \.self){ index in
                         Image(uiImage: images[index])
                             .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                            .scaledToFit()
                     }
-                    Text("Description")
-                        .font(.title2)
-                    Text(day.descr ?? "")
-                }
+                }.tabViewStyle( .page(indexDisplayMode: .always))
+                    .frame(height: 250)
+                Text("Description")
+                    .font(.title2)
+                Text(day.descr ?? "")
             }.navigationTitle(Text(day.date!, style: .date))
         }.onAppear{
             getImage()}
+        .navigationBarBackButtonHidden()
     }
     
     private func getImage() {

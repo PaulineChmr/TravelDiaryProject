@@ -22,6 +22,14 @@ struct AddTripView: View {
     @State private var shouldNavigate: Bool = false
     
     var body: some View {
+        HStack{
+            NavigationLink{
+                HomeView()
+            } label: {
+                Label("Back", systemImage: "arrow.left.circle")
+            }
+            Spacer()
+        }
         NavigationView {
             Form {
                 Section(header: Text("Informations")) {
@@ -63,6 +71,7 @@ struct AddTripView: View {
         }.navigationDestination(isPresented: $shouldNavigate) {
             HomeView()
         }
+        .navigationBarBackButtonHidden()
     }
     
     private func saveTrip() {
