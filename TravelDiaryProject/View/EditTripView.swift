@@ -18,7 +18,7 @@ struct EditTripView: View {
     @State private var selectedImage: UIImage?
     @State private var imagePath: String?
     @State private var showImagePicker: Bool = false
-    @State private var errorMessage: String = "Please fill completely the form"
+    @State private var errorMessage: String = "Please fill the form completely"
     @State private var showAlert: Bool = false
     @State private var shouldNavigate: Bool = false
     
@@ -33,7 +33,7 @@ struct EditTripView: View {
         }
         NavigationView {
             Form {
-                Section(header: Text("Information")) {
+                Section(header: Text("Edit trip information")) {
                     TextField("Title", text: Binding(get: {trip.title ?? ""}, set: {trip.title = $0}))
                     TextField("Description", text: Binding(get: {trip.descr ?? ""}, set: {trip.descr = $0}))
                     DatePicker("Start date", selection: Binding(get: {trip.startDate ?? Date()}, set: {trip.startDate = $0}), displayedComponents: .date)
@@ -50,7 +50,7 @@ struct EditTripView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .frame(height: 150)
                         } else {
-                            Text("Ajouter une Photo")
+                            Text("Edit trip photo")
                         }
                     }
                     .sheet(isPresented: $showImagePicker) {
@@ -59,7 +59,7 @@ struct EditTripView: View {
                 }
                 
                 Button(action: saveTrip){
-                    Text("Save trip")
+                    Text("Update trip")
                 }
                 if showAlert{
                     Text(errorMessage).foregroundStyle(.red)

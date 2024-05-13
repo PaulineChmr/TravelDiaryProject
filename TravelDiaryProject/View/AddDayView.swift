@@ -18,7 +18,7 @@ struct AddDayView: View{
     @State private var selectedImages: [UIImage] = []
     @State var trip: CDTrip?
     @State private var showImagePicker: Bool = false
-    @State private var errorMessage: String = "Please fill completely the form"
+    @State private var errorMessage: String = "Please fill the form completely"
     @State private var showAlert: Bool = false
     @State private var shouldNavigate: Bool = false
 

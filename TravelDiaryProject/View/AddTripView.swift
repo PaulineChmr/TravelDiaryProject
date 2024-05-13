@@ -17,7 +17,7 @@ struct AddTripView: View {
     @State private var selectedImage: UIImage?
     @State private var imagePath: String?
     @State private var showImagePicker: Bool = false
-    @State private var errorMessage: String = "Please fill completely the form"
+    @State private var errorMessage: String = "Please fill the form completely"
     @State private var showAlert: Bool = false
     @State private var shouldNavigate: Bool = false
     
@@ -32,7 +32,7 @@ struct AddTripView: View {
         }
         NavigationView {
             Form {
-                Section(header: Text("Informations")) {
+                Section(header: Text("Trip imformation")) {
                     TextField("Title", text: $title)
                     TextField("Description", text: $description)
                     DatePicker("Start date", selection: $startDate, displayedComponents: .date)
@@ -49,7 +49,7 @@ struct AddTripView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .frame(height: 150)
                         } else {
-                            Text("Ajouter une Photo")
+                            Text("Add a photo to your trip")
                         }
                     }
                     .sheet(isPresented: $showImagePicker) {
