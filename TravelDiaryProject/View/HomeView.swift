@@ -17,6 +17,9 @@ struct HomeView: View{
         NavigationStack{
             // Before Application launches, showing a main image of application for 3 seconds.
             if isAppActive {
+                Rectangle()
+                    .fill(.tdBeige)
+                    .ignoresSafeArea()
                 List(trips){ trip in
                     NavigationLink{
                         TripDetailView(trip: trip)
@@ -78,5 +81,11 @@ struct HomeView: View{
         } label: {
             Label("", systemImage: "plus.app.fill")
         }
+    }
+}
+
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
     }
 }
