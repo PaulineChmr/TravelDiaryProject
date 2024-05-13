@@ -23,47 +23,111 @@ struct AddTripView: View {
     
     var body: some View {
         NavigationView {
-            Form {
-                Section(header: Text("Informations")) {
-                    TextField("Title", text: $title)
-                    TextField("Description", text: $description)
-                    DatePicker("Start date", selection: $startDate, displayedComponents: .date)
-                    DatePicker("End date", selection: $endDate, displayedComponents: .date)
-                }
-                
-                Section(header: Text("Picture")) {
-                    Button(action: {
-                        showImagePicker = true
-                    }) {
-                        if let selectedImage = selectedImage {
-                            Image(uiImage: selectedImage)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(height: 150)
-                        } else {
-                            Text("Ajouter une Photo")
+            // If users write a long test in the description section, it allows users to scroll down the screen.
+            ScrollView{
+                //Using VStack instead of form to modify the styles. There are many limitation of using form.
+                VStack(spacing: 20) {
+                    HStack{
+                        Text("Add your new trip")
+                            .font(.custom("Roboto-Regular", size: 18)) // Customize your font here
+                            .foregroundColor(.tdTextBody)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.init(top: 35, leading: 20, bottom: 30, trailing: 0))
+                       
+                    }
+                    Section(header: Text("").font(.custom("Roboto-Regular", size: 20)).foregroundColor(.tdTextTitle)) {
+                        VStack{
+                            TextField("Title", text: $title)
+                                .foregroundColor(.tdPurple)
+                                .font(.custom("Roboto-Black", size: 28))
+                                .padding(.init(top: 30, leading: 20, bottom: 5, trailing: 20))
+                            TextField("Description", text: $description)
+                                .foregroundColor(.tdTextTitle)
+                                .font(.custom("Roboto-Medium", size: 20))
+                                .padding(.init(top: 5, leading: 20, bottom: 10, trailing: 20))
+                            HStack{
+                                Text("Start Date")
+                                    .foregroundColor(.tdTextTitle)
+                                    .font(.custom("Roboto-Regular", size: 17))
+                                    .padding(.init(top: 5, leading: 20, bottom: 5, trailing: 20))
+                                DatePicker("", selection: $startDate, displayedComponents: .date)
+                                    .accentColor(.tdRedorange)
+                                    .padding(.init(top: 5, leading: 20, bottom: 5, trailing: 20))
+                            }
+                            HStack{
+                                Text("End Date")
+                                    .foregroundColor(.tdTextTitle)
+                                    .font(.custom("Roboto-Regular", size: 17))
+                                    .padding(.init(top: 5, leading: 20, bottom: 30, trailing: 20))
+                                DatePicker("", selection: $endDate, displayedComponents: .date)
+                                    .accentColor(.tdRedorange)
+                                    .padding(.init(top: 5, leading: 20, bottom: 30, trailing: 20))
+                            }
+                        }
+                        .background(Color.white)
+                        .cornerRadius(20)  // Rounded corners
+                        .shadow(color: .gray, radius: 5, x: 3, y: 3)
+                        .padding(.horizontal)
+                    }
+                    
+                    Section() {
+                        Button(action: {
+                            showImagePicker = true
+                        }) {
+                            if let selectedImage = selectedImage {
+                                Image(uiImage: selectedImage)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(height: 150)
+                            } else {
+                                Text("Add your photo")
+                            }
+                        }
+                        .frame(width: 320)
+                        .padding(15)
+                        .background(.white)
+                        .foregroundColor(.tdRedorange)
+                        .font(.custom("Roboto-Regular", size: 17))
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                        .shadow(color: .gray, radius: 5, x: 3, y: 3)
+                        .sheet(isPresented: $showImagePicker) {
+                            MonoImagePicker(selectedImage: $selectedImage, imagePath: $imagePath)
                         }
                     }
-                    .sheet(isPresented: $showImagePicker) {
-                        MonoImagePicker(selectedImage: $selectedImage, imagePath: $imagePath)
+                   
+                    
+                    Spacer()
+                        .frame(height: 30)
+                    Button(action: saveTrip){
+                        Text("Save trip")
+                    }
+                    .frame(width: 300)
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .padding(10)
+                    .background(.tdRedorange)
+                    .foregroundColor(.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 30))
+                    if showAlert{
+                        Text(errorMessage).foregroundStyle(.red)
                     }
                 }
-                
-                Button(action: saveTrip){
-                    Text("Save trip")
-                }
-                if showAlert{
-                    Text(errorMessage).foregroundStyle(.red)
-                }
             }
+            .background(Color.tdBeige) // Set the background color of ScrollView to blue.
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     VStack{
                         Spacer()
                             .frame(height:60)
-                        Text("New Trip")
-                            .font(.custom("Roboto-Black", size: 43)) // Customize your font here
-                            .foregroundColor(.tdRedorange)
+                        HStack{
+                            Text("New Trip")
+                                .font(.custom("Roboto-Black", size: 43)) // Customize your font here
+                                .foregroundColor(.tdRedorange)
+                            Image(systemName: "pencil.line")
+                                .font(.system(size: 30))
+                                .foregroundColor(.tdTextBody)
+                        }
+                        
                     }
                 }
             }
