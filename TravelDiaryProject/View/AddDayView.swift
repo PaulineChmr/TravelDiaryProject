@@ -23,6 +23,14 @@ struct AddDayView: View{
     @State private var shouldNavigate: Bool = false
 
     var body: some View {
+        HStack{
+            NavigationLink{
+                TripDetailView(trip: day.trip!)
+            } label: {
+                Label("Back", systemImage: "arrow.left.circle")
+            }
+            Spacer()
+        }
         NavigationView {
             Form {
                 Section(header: Text("Informations")) {
@@ -41,7 +49,6 @@ struct AddDayView: View{
                     Button(action: {
                         showImagePicker = true
                     }) {
-                        
                         Text("Add a picture")
                     }
                     .sheet(isPresented: $showImagePicker) {
@@ -65,6 +72,7 @@ struct AddDayView: View{
         }.navigationDestination(isPresented: $shouldNavigate) {
             TripDetailView(trip: trip!)
         }
+        .navigationBarBackButtonHidden()
     }
     
     private func saveDay() {

@@ -12,6 +12,14 @@ import SwiftUI
 struct TripDetailView: View{
     var trip: CDTrip
     var body: some View{
+        HStack{
+            NavigationLink{
+                HomeView()
+            } label: {
+                Label("Back", systemImage: "arrow.left.circle")
+            }
+            Spacer()
+        }
         ScrollView{
             NavigationStack{
                 VStack(alignment: .leading, spacing: 20) {
@@ -41,6 +49,7 @@ struct TripDetailView: View{
                     }
                 }
             }.navigationTitle(trip.title ?? "Trip details")
+            .navigationBarBackButtonHidden()
         }
     }
     
