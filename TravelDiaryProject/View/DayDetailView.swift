@@ -13,26 +13,26 @@ struct DayDetailView: View{
     @State var images: [UIImage] = []
     var body: some View {
         HStack{
-            NavigationLink{
-                TripDetailView(trip: day.trip!)
-            } label: {
-                Label("Back", systemImage: "arrow.left.circle")
-            }
-            Spacer()
-        }
+                    NavigationLink{
+                        TripDetailView(trip: day.trip!)
+                    } label: {
+                        Label("Back", systemImage: "arrow.left.circle")
+                    }
+                    Spacer()
         ScrollView{
             NavigationStack{
                 TabView{
-                    ForEach(images.indices, id: \.self){ index in
-                        Image(uiImage: images[index])
-                            .resizable()
-                            .scaledToFit()
-                    }
-                }.tabViewStyle( .page(indexDisplayMode: .always))
-                    .frame(height: 250)
-                Text("Description")
-                    .font(.title2)
-                Text(day.descr ?? "")
+                                    ForEach(images.indices, id: \.self){ index in
+                                        Image(uiImage: images[index])
+                                            .resizable()
+                                            .scaledToFit()
+                                    }
+                                }.tabViewStyle( .page(indexDisplayMode: .always))
+                                    .frame(height: 250)
+                    Text("Description")
+                        .font(.title2)
+                    Text(day.descr ?? "")
+                }
             }.navigationTitle(Text(day.date!, style: .date))
         }.onAppear{
             getImage()}

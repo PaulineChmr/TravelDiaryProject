@@ -25,8 +25,16 @@
 		4CA335242BE613E60036B4DF /* CDTrip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA335222BE613E60036B4DF /* CDTrip+CoreDataClass.swift */; };
 		4CA335252BE613E60036B4DF /* CDTrip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA335232BE613E60036B4DF /* CDTrip+CoreDataProperties.swift */; };
 		4CBB29712BEA41BB002BBF4C /* MonoImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBB29702BEA41BB002BBF4C /* MonoImagePicker.swift */; };
-		4CD900B92BF2238600DA1762 /* CDImage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD900B72BF2238600DA1762 /* CDImage+CoreDataClass.swift */; };
-		4CD900BA2BF2238600DA1762 /* CDImage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD900B82BF2238600DA1762 /* CDImage+CoreDataProperties.swift */; };
+		4CBB29742BEA464D002BBF4C /* CDImage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBB29722BEA464D002BBF4C /* CDImage+CoreDataClass.swift */; };
+		4CBB29752BEA464D002BBF4C /* CDImage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBB29732BEA464D002BBF4C /* CDImage+CoreDataProperties.swift */; };
+		4CBCCB1E2BF3543D00A85FFB /* EditTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCCB1D2BF3543D00A85FFB /* EditTripView.swift */; };
+		4CBCCB292BF356DA00A85FFB /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CBCCB222BF356DA00A85FFB /* Roboto-Regular.ttf */; };
+		4CBCCB2A2BF356DA00A85FFB /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CBCCB232BF356DA00A85FFB /* Roboto-Thin.ttf */; };
+		4CBCCB2B2BF356DA00A85FFB /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CBCCB242BF356DA00A85FFB /* Roboto-Medium.ttf */; };
+		4CBCCB2C2BF356DA00A85FFB /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CBCCB252BF356DA00A85FFB /* Roboto-Light.ttf */; };
+		4CBCCB2D2BF356DA00A85FFB /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CBCCB262BF356DA00A85FFB /* Roboto-Bold.ttf */; };
+		4CBCCB2E2BF356DA00A85FFB /* PoetsenOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CBCCB272BF356DA00A85FFB /* PoetsenOne-Regular.ttf */; };
+		4CBCCB2F2BF356DA00A85FFB /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CBCCB282BF356DA00A85FFB /* Roboto-Black.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,8 +57,17 @@
 		4CA335222BE613E60036B4DF /* CDTrip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDTrip+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4CA335232BE613E60036B4DF /* CDTrip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDTrip+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4CBB29702BEA41BB002BBF4C /* MonoImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonoImagePicker.swift; sourceTree = "<group>"; };
-		4CD900B72BF2238600DA1762 /* CDImage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDImage+CoreDataClass.swift"; sourceTree = "<group>"; };
-		4CD900B82BF2238600DA1762 /* CDImage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDImage+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4CBB29722BEA464D002BBF4C /* CDImage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDImage+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4CBB29732BEA464D002BBF4C /* CDImage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDImage+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4CBCCB1D2BF3543D00A85FFB /* EditTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTripView.swift; sourceTree = "<group>"; };
+		4CBCCB222BF356DA00A85FFB /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "TravelDiaryProject/Font/Roboto-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		4CBCCB232BF356DA00A85FFB /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Thin.ttf"; path = "TravelDiaryProject/Font/Roboto-Thin.ttf"; sourceTree = SOURCE_ROOT; };
+		4CBCCB242BF356DA00A85FFB /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "TravelDiaryProject/Font/Roboto-Medium.ttf"; sourceTree = SOURCE_ROOT; };
+		4CBCCB252BF356DA00A85FFB /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "TravelDiaryProject/Font/Roboto-Light.ttf"; sourceTree = SOURCE_ROOT; };
+		4CBCCB262BF356DA00A85FFB /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "TravelDiaryProject/Font/Roboto-Bold.ttf"; sourceTree = SOURCE_ROOT; };
+		4CBCCB272BF356DA00A85FFB /* PoetsenOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PoetsenOne-Regular.ttf"; path = "TravelDiaryProject/Font/PoetsenOne-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		4CBCCB282BF356DA00A85FFB /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Black.ttf"; path = "TravelDiaryProject/Font/Roboto-Black.ttf"; sourceTree = SOURCE_ROOT; };
+		4CBCCB302BF3571A00A85FFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +84,8 @@
 		17079A9A2BE0E90A001B5EE0 = {
 			isa = PBXGroup;
 			children = (
-				4CD900B72BF2238600DA1762 /* CDImage+CoreDataClass.swift */,
-				4CD900B82BF2238600DA1762 /* CDImage+CoreDataProperties.swift */,
+				4CBB29722BEA464D002BBF4C /* CDImage+CoreDataClass.swift */,
+				4CBB29732BEA464D002BBF4C /* CDImage+CoreDataProperties.swift */,
 				4CA335222BE613E60036B4DF /* CDTrip+CoreDataClass.swift */,
 				4CA335232BE613E60036B4DF /* CDTrip+CoreDataProperties.swift */,
 				4CA3351E2BE613DB0036B4DF /* CDDay+CoreDataClass.swift */,
@@ -90,6 +107,8 @@
 		17079AA52BE0E90A001B5EE0 /* TravelDiaryProject */ = {
 			isa = PBXGroup;
 			children = (
+				4CBCCB302BF3571A00A85FFB /* Info.plist */,
+				4CBCCB212BF356BD00A85FFB /* New Group */,
 				4C6527E82BE250AF00958CAD /* View */,
 				4C64DCD42BE24B8E0060AA81 /* Model */,
 				17079AA62BE0E90A001B5EE0 /* TravelDiaryProjectApp.swift */,
@@ -127,8 +146,23 @@
 				4CA335122BE600FD0036B4DF /* DayDetailView.swift */,
 				4CA335142BE6012C0036B4DF /* AddDayView.swift */,
 				4CBB29702BEA41BB002BBF4C /* MonoImagePicker.swift */,
+				4CBCCB1D2BF3543D00A85FFB /* EditTripView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4CBCCB212BF356BD00A85FFB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				4CBCCB272BF356DA00A85FFB /* PoetsenOne-Regular.ttf */,
+				4CBCCB282BF356DA00A85FFB /* Roboto-Black.ttf */,
+				4CBCCB262BF356DA00A85FFB /* Roboto-Bold.ttf */,
+				4CBCCB252BF356DA00A85FFB /* Roboto-Light.ttf */,
+				4CBCCB242BF356DA00A85FFB /* Roboto-Medium.ttf */,
+				4CBCCB222BF356DA00A85FFB /* Roboto-Regular.ttf */,
+				4CBCCB232BF356DA00A85FFB /* Roboto-Thin.ttf */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +225,13 @@
 			files = (
 				4CA335112BE5FF6B0036B4DF /* imagenotfound.jpeg in Resources */,
 				17079AB02BE0E90C001B5EE0 /* Preview Assets.xcassets in Resources */,
+				4CBCCB2B2BF356DA00A85FFB /* Roboto-Medium.ttf in Resources */,
+				4CBCCB292BF356DA00A85FFB /* Roboto-Regular.ttf in Resources */,
+				4CBCCB2C2BF356DA00A85FFB /* Roboto-Light.ttf in Resources */,
+				4CBCCB2A2BF356DA00A85FFB /* Roboto-Thin.ttf in Resources */,
+				4CBCCB2D2BF356DA00A85FFB /* Roboto-Bold.ttf in Resources */,
+				4CBCCB2F2BF356DA00A85FFB /* Roboto-Black.ttf in Resources */,
+				4CBCCB2E2BF356DA00A85FFB /* PoetsenOne-Regular.ttf in Resources */,
 				17079AAD2BE0E90C001B5EE0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,11 +244,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CA335202BE613DB0036B4DF /* CDDay+CoreDataClass.swift in Sources */,
+				4CBCCB1E2BF3543D00A85FFB /* EditTripView.swift in Sources */,
 				4CA335212BE613DB0036B4DF /* CDDay+CoreDataProperties.swift in Sources */,
 				4C6527EC2BE251C800958CAD /* TripDetailView.swift in Sources */,
 				4CA335132BE600FD0036B4DF /* DayDetailView.swift in Sources */,
-				4CD900B92BF2238600DA1762 /* CDImage+CoreDataClass.swift in Sources */,
-				4CD900BA2BF2238600DA1762 /* CDImage+CoreDataProperties.swift in Sources */,
+				4CBB29742BEA464D002BBF4C /* CDImage+CoreDataClass.swift in Sources */,
+				4CBB29752BEA464D002BBF4C /* CDImage+CoreDataProperties.swift in Sources */,
 				4CA334DE2BE5D0720036B4DF /* DataModel.xcdatamodeld in Sources */,
 				4CA335242BE613E60036B4DF /* CDTrip+CoreDataClass.swift in Sources */,
 				4CBB29712BEA41BB002BBF4C /* MonoImagePicker.swift in Sources */,
@@ -355,6 +397,9 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelDiaryProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -384,6 +429,9 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelDiaryProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

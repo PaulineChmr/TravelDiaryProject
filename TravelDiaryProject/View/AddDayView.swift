@@ -24,13 +24,13 @@ struct AddDayView: View{
 
     var body: some View {
         HStack{
-            NavigationLink{
-                TripDetailView(trip: day.trip!)
-            } label: {
-                Label("Back", systemImage: "arrow.left.circle")
-            }
-            Spacer()
-        }
+                    NavigationLink{
+                        TripDetailView(trip: day.trip!)
+                    } label: {
+                        Label("Back", systemImage: "arrow.left.circle")
+                    }
+                    Spacer()
+                }
         NavigationView {
             Form {
                 Section(header: Text("Informations")) {
@@ -49,6 +49,7 @@ struct AddDayView: View{
                     Button(action: {
                         showImagePicker = true
                     }) {
+                        
                         Text("Add a picture")
                     }
                     .sheet(isPresented: $showImagePicker) {
