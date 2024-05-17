@@ -32,6 +32,11 @@ struct DayDetailView: View{
                     Text("Description")
                         .font(.title2)
                     Text(day.descr ?? "")
+                NavigationLink{
+                    MapView(latitude: day.locationLatitude, longitude: day.locationLongitude, date: day.date ?? Date())
+                } label: {
+                    Text("See Location")
+                }
                 }
             }.navigationTitle(Text(day.date!, style: .date))
         }.onAppear{

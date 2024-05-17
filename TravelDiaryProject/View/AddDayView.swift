@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import MapKit
 
 struct AddDayView: View{
     @Environment(\.managedObjectContext) private var viewContext
@@ -16,6 +17,8 @@ struct AddDayView: View{
     @State var date: Date
     @State private var image: [String] = []
     @State private var selectedImages: [UIImage] = []
+    @State private var locationLatitude: Double
+    @State private var locationLongitude: Double
     @State var trip: CDTrip?
     @State private var showImagePicker: Bool = false
     @State private var errorMessage: String = "Please fill completely the form"
@@ -70,6 +73,12 @@ struct AddDayView: View{
             .sheet(isPresented: $showImagePicker) {
                 ImagePicker(selectedImage: $selectedImages, imagePath: $image)
             }
+            MapReader{
+                reader in Map().onTapGesture(perform: { screenCoOrd in
+                    let pinLocation = reader.convert(screenCoOrd, from: .local)
+                    
+                })
+            }
         }.navigationDestination(isPresented: $shouldNavigate) {
             TripDetailView(trip: trip!)
         }
@@ -86,6 +95,8 @@ struct AddDayView: View{
         newDay.descr = self.descr
         newDay.date = self.date
         newDay.images = createImagesDay()
+        newDay.locationLatitude = self.locationLatitude
+        newDay.locationLongitude = self.locationLongitude
         newDay.trip = self.trip
         newDay.edited = true
         shouldNavigate = true

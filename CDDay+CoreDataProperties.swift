@@ -22,6 +22,8 @@ extension CDDay {
     @NSManaged public var id: UUID?
     @NSManaged public var trip: CDTrip?
     @NSManaged public var images: NSSet?
+    @NSManaged public var locationLatitude: Double
+    @NSManaged public var locationLongitude: Double
     
     public var imageArray: [CDImage]{
         let set = images as? Set<CDImage> ?? []

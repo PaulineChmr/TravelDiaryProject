@@ -10,12 +10,13 @@
 		17079AA72BE0E90A001B5EE0 /* TravelDiaryProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17079AA62BE0E90A001B5EE0 /* TravelDiaryProjectApp.swift */; };
 		17079AAD2BE0E90C001B5EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17079AAC2BE0E90C001B5EE0 /* Assets.xcassets */; };
 		17079AB02BE0E90C001B5EE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17079AAF2BE0E90C001B5EE0 /* Preview Assets.xcassets */; };
+		17545DEC2BF7376E00488A38 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17545DEA2BF7376E00488A38 /* DataModel.xcdatamodeld */; };
+		17545DEE2BF7383B00488A38 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17545DED2BF7383A00488A38 /* MapView.swift */; };
 		4C64DCDA2BE24C240060AA81 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C64DCD92BE24C240060AA81 /* Day2.swift */; };
 		4C6527EA2BE250FE00958CAD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6527E92BE250FE00958CAD /* HomeView.swift */; };
 		4C6527EC2BE251C800958CAD /* TripDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6527EB2BE251C800958CAD /* TripDetailView.swift */; };
 		4CA334D92BE5C8410036B4DF /* AddTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA334D82BE5C8410036B4DF /* AddTripView.swift */; };
 		4CA334DB2BE5CA1A0036B4DF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA334DA2BE5CA1A0036B4DF /* ImagePicker.swift */; };
-		4CA334DE2BE5D0720036B4DF /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CA334DC2BE5D0720036B4DF /* DataModel.xcdatamodeld */; };
 		4CA334FF2BE5F4170036B4DF /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA334FE2BE5F4170036B4DF /* DataController.swift */; };
 		4CA335112BE5FF6B0036B4DF /* imagenotfound.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4CA335102BE5FF6B0036B4DF /* imagenotfound.jpeg */; };
 		4CA335132BE600FD0036B4DF /* DayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA335122BE600FD0036B4DF /* DayDetailView.swift */; };
@@ -42,12 +43,13 @@
 		17079AA62BE0E90A001B5EE0 /* TravelDiaryProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDiaryProjectApp.swift; sourceTree = "<group>"; };
 		17079AAC2BE0E90C001B5EE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17079AAF2BE0E90C001B5EE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		17545DEB2BF7376E00488A38 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		17545DED2BF7383A00488A38 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4C64DCD92BE24C240060AA81 /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
 		4C6527E92BE250FE00958CAD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4C6527EB2BE251C800958CAD /* TripDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailView.swift; sourceTree = "<group>"; };
 		4CA334D82BE5C8410036B4DF /* AddTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripView.swift; sourceTree = "<group>"; };
 		4CA334DA2BE5CA1A0036B4DF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		4CA334DD2BE5D0720036B4DF /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		4CA334FE2BE5F4170036B4DF /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		4CA335102BE5FF6B0036B4DF /* imagenotfound.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imagenotfound.jpeg; sourceTree = "<group>"; };
 		4CA335122BE600FD0036B4DF /* DayDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailView.swift; sourceTree = "<group>"; };
@@ -114,7 +116,7 @@
 				17079AA62BE0E90A001B5EE0 /* TravelDiaryProjectApp.swift */,
 				17079AAC2BE0E90C001B5EE0 /* Assets.xcassets */,
 				17079AAE2BE0E90C001B5EE0 /* Preview Content */,
-				4CA334DC2BE5D0720036B4DF /* DataModel.xcdatamodeld */,
+				17545DEA2BF7376E00488A38 /* DataModel.xcdatamodeld */,
 			);
 			path = TravelDiaryProject;
 			sourceTree = "<group>";
@@ -147,6 +149,7 @@
 				4CA335142BE6012C0036B4DF /* AddDayView.swift */,
 				4CBB29702BEA41BB002BBF4C /* MonoImagePicker.swift */,
 				4CBCCB1D2BF3543D00A85FFB /* EditTripView.swift */,
+				17545DED2BF7383A00488A38 /* MapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,14 +253,15 @@
 				4CA335132BE600FD0036B4DF /* DayDetailView.swift in Sources */,
 				4CBB29742BEA464D002BBF4C /* CDImage+CoreDataClass.swift in Sources */,
 				4CBB29752BEA464D002BBF4C /* CDImage+CoreDataProperties.swift in Sources */,
-				4CA334DE2BE5D0720036B4DF /* DataModel.xcdatamodeld in Sources */,
 				4CA335242BE613E60036B4DF /* CDTrip+CoreDataClass.swift in Sources */,
 				4CBB29712BEA41BB002BBF4C /* MonoImagePicker.swift in Sources */,
 				4CA335252BE613E60036B4DF /* CDTrip+CoreDataProperties.swift in Sources */,
 				4CA334DB2BE5CA1A0036B4DF /* ImagePicker.swift in Sources */,
 				4C64DCDA2BE24C240060AA81 /* Day2.swift in Sources */,
 				4CA334FF2BE5F4170036B4DF /* DataController.swift in Sources */,
+				17545DEC2BF7376E00488A38 /* DataModel.xcdatamodeld in Sources */,
 				4C6527EA2BE250FE00958CAD /* HomeView.swift in Sources */,
+				17545DEE2BF7383B00488A38 /* MapView.swift in Sources */,
 				17079AA72BE0E90A001B5EE0 /* TravelDiaryProjectApp.swift in Sources */,
 				4CA335152BE6012C0036B4DF /* AddDayView.swift in Sources */,
 				4CA334D92BE5C8410036B4DF /* AddTripView.swift in Sources */,
@@ -474,14 +478,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		4CA334DC2BE5D0720036B4DF /* DataModel.xcdatamodeld */ = {
+		17545DEA2BF7376E00488A38 /* DataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				4CA334DD2BE5D0720036B4DF /* DataModel.xcdatamodel */,
+				17545DEB2BF7376E00488A38 /* DataModel.xcdatamodel */,
 			);
-			currentVersion = 4CA334DD2BE5D0720036B4DF /* DataModel.xcdatamodel */;
+			currentVersion = 17545DEB2BF7376E00488A38 /* DataModel.xcdatamodel */;
 			name = DataModel.xcdatamodeld;
-			path = /Users/24855999/Downloads/TravelDiaryProject/TravelDiaryProject/DataModel.xcdatamodeld;
+			path = /Users/sidaksinghaulakh/dev/TravelDiaryProject/TravelDiaryProject/DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
