@@ -2,6 +2,8 @@
 
 ### Swift Pogramming course assignment 3
 
+Git repo : https://github.com/PaulineChmr/TravelDiaryProject.git
+
 #### Introduction
 
 This application allows the user to create trips, add photo without network connexion.
